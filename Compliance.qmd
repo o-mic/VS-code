@@ -1,0 +1,7 @@
+---
+title: "Compliance"
+---
+
+[Tauber and Schmittner (2018)](https://people.fh-burgenland.at/server/api/core/bitstreams/eb7e0bd4-82d7-46a7-8df7-cce17dd8a8f3/content) highlight the significance of monitoring the security and safety of Cyber-Physical Systems (CPS) during their operational phase. They propose that digital twins can play a crucial role in this process by accurately reflecting the behaviour of CPS throughout their entire lifecycle. By continuously monitoring and documenting security and safety aspects through digital twins, organizations can provide evidence of meeting security standards, such as IEC 62443, and comply with legal requirements.
+
+With increasing regulatory requirements for CPS operators, integrating security and legal compliance support into digital twins becomes valuable. This approach allows for better control and oversight of CPS operations, ensuring that they adhere to industry standards and legal obligations, thereby enhancing the overall security and resilience of critical infrastructure.

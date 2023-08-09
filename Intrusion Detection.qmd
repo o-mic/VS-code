@@ -1,0 +1,9 @@
+---
+title: "Intrusion Detection"
+---
+
+The concept of digital twins can be utilised for implementing Intrusion Detection Systems (IDSs) in Cyber-Physical Systems (CPSs). Two papers, namely [Eckhart and Ekelhart (2018c)](https://www.sqi.at/resources/Towards_Security-Aware_Virtual_Environments_for_Digital_Twins.pdf) and [Eckhart and Ekelhart (2018b)](https://www.sqi.at/resources/Eckhart2018a.pdf), demonstrate  how digital twins can be leveraged for this purpose.
+
+In Eckhart and Ekelhart (2018c), a knowledge-based intrusion detection system is implemented. It specifies misuse patterns that the system would exhibit upon a compromise. The digital twins are continuously checked for rule violations based on safety and security rules. 
+
+In Eckhart and Ekelhart (2018b), a state replication approach is introduced, allowing digital twins to virtually mirror the behaviour of the real CPS during operation. This approach enables the implementation of a behaviour-specification-based IDS. The digital twins receive the same inputs as their physical counterparts, and intrusion detection is achieved by comparing their inputs and outputs. This technique generally yields a low false-negative rate and is capable of detecting previously unknown attacks.

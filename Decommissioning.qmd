@@ -1,0 +1,5 @@
+---
+title: "Decommissioning"
+---
+
+When CPSs and ICSs (Industrial Control Systems) reach their end-of-life phase, it is crucial to ensure secure decommissioning. Digital twins can assist in this process by helping to properly dispose of materials and answer questions related to media sanitization. They can also aid in ensuring that data security requirements are met during the disposal of the digital thread and the digital twins themselves. Proper archiving and secure closure of the digital twins must be ensured to prevent unauthorized access and data breaches during decommissioning. 

@@ -1,0 +1,113 @@
+{
+  "index.qmd": {
+    "index.html": "31bfaeef"
+  },
+  "about.qmd": {
+    "about.html": "0253d682"
+  },
+  "barriers to adoption.qmd": {
+    "barriers to adoption.html": "14a4a823"
+  },
+  "online harms.qmd": {
+    "online harms.html": "06475be5"
+  },
+  "security threats.qmd": {
+    "security threats.html": "d1c5fcd9"
+  },
+  "security.qmd": {
+    "security.html": "83bf2e47"
+  },
+  "ddos.qmd": {
+    "ddos.html": "0eb4f083"
+  },
+  "Insider.qmd": {
+    "Insider.html": "6d1883a1"
+  },
+  "malware.qmd": {
+    "malware.html": "7f0c3753"
+  },
+  "manip.qmd": {
+    "manip.html": "760b2f5c"
+  },
+  "socialeng.qmd": {
+    "socialeng.html": "32b7cc92"
+  },
+  "Unauthorised.qmd": {
+    "Unauthorised.html": "a15eee64"
+  },
+  "DigitalTwins.qmd": {
+    "DigitalTwins.html": "4997e3e5"
+  },
+  "news.qmd": {
+    "news.html": "56e80b24"
+  },
+  "Acknowledgements.qmd": {
+    "Acknowledgements.html": "45a945ca"
+  },
+  "creative.qmd": {
+    "creative.html": "3c3ed188"
+  },
+  "Criticalinfra.qmd": {
+    "Criticalinfra.html": "1d30cead"
+  },
+  "project2.qmd": {
+    "project2.html": "b03d7822"
+  },
+  "project1.qmd": {
+    "project1.html": "53f21f38"
+  },
+  "project3.qmd": {
+    "project3.html": "ecda2587"
+  },
+  "project4.qmd": {
+    "project4.html": "30d275a3"
+  },
+  "Opendata.qmd": {
+    "Opendata.html": "35e55bd3"
+  },
+  "project5.qmd": {
+    "project5.html": "77c14240"
+  },
+  "Acknowledgements copy 2.qmd": {
+    "Acknowledgements copy 2.html": "d3b7c860"
+  },
+  "Acknowledgements copy.qmd": {
+    "Acknowledgements copy.html": "ef0f468a"
+  },
+  "DigiTwinsForSecurity.qmd": {
+    "DigiTwinsForSecurity.html": "911513db"
+  },
+  "DiSecurityDigiTwins.qmd": {
+    "DiSecurityDigiTwins.html": "dc2f1f29"
+  },
+  "DiSecurityForDigiTwins.qmd": {
+    "DiSecurityForDigiTwins.html": "28434da2"
+  },
+  "Compliance.qmd": {
+    "Compliance.html": "50061a39"
+  },
+  "Decommissioning.qmd": {
+    "Decommissioning.html": "45877c2e"
+  },
+  "HardwareMisconfig.qmd": {
+    "HardwareMisconfig.html": "a2028dea"
+  },
+  "Intrusion Detection.qmd": {
+    "Intrusion Detection.html": "16349fee"
+  },
+  "Privacy.qmd": {
+    "Privacy.html": "363fc23a"
+  },
+  "SecurityTesting.qmd": {
+    "SecurityTesting.html": "317e88e3"
+  },
+  "Training.qmd": {
+    "Training.html": "bef1da1d"
+  },
+  "Trainingg.qmd": {
+    "Trainingg.html": "ff5f4048"
+  },
+  "Online harms of Digital Twin.qmd": {
+    "Online harms of Digital Twin.html": "836c62e4"
+  }
+}

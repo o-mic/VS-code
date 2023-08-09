@@ -1,0 +1,16 @@
+---
+title: "Critical Infrastructure Security"
+---
+
+What happens when new tools enter the old world? For decades, inaccessible legacy computing systems have been running critical infrastructures, like power plants, train stations or wastewater facilities. These so-called operational technologies (OTs), traditionally consisted of isolated computers controlling sensors and actuators, often use simple binary logic (e.g. a machine turning on/off depending on a sensed ambient temperature). The proponents of infrastructure modernisation argue that legacy systems are due an upgrade – after all, they remained the same for decades. Connecting critical infrastructures to the Internet and the world of big data would equip practitioners with the possibility of remote operations, predictive maintenance or real-time monitoring of industrial processes. Although this paradigm shift offers interesting prospects, it also brings a novel concern, namely cyber security. 
+
+Moreover, the requirement for cyber security cannot be divorced from safety as the consequences of cyber security attacks in critical infrastructure systems move into the material realm.  Cyber security attacks on OTs can lead to explosions, collisions and blackouts. This necessitates a novel approach to the studies of expertise, risk and technical collaboration
+
+Project 1: [How many shades of NIS? Understanding organisational cultures and sectoral differences during cyber security policy implementation](project3.qmd)
+
+
+Project 2: [What’s next for the NIS Directive? Extending the community of interest to better understand the “Indicators of Good Practice”](project4.qmd)
+
+
+
+Project 3: [Understanding disruptive powers of IoT in the energy sector (Power2)](project5.qmd)

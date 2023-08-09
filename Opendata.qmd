@@ -1,0 +1,11 @@
+---
+title: "Open Data"
+---
+<https://www.bristol.ac.uk/media-library/sites/bristol-digital-futures-institute/documents/Open%20data%20platforms%20and%20security.pdf>  **Can't save image. Can only save image as an adobe acroabt file, not a png or jpg file.** 
+
+Thinking about cyber security in the context of energy systems can quickly get very abstract. What does “patching” mean? What information should be protected by password and what should require multi factor authentication? Can anyone and everyone see “open” data?
+
+This infographic demistifies several terms around cyber security and open data platforms using a visual metaphor of a train station
+
+
+The image was created by Oliver Dean as a part of “New Grid and I” EPSRC Impact Accelerator Account (project researchers: Ruzanna Chitchyan and Ola Michalec. Project partner: Energy Systems Catapult)

@@ -1,0 +1,12 @@
+---
+title: "Project: What’s next for the NIS Directive? Extending the community of interest to better understand the Indicators of Good Practice"
+
+---
+
+Since 2018, the European Union member states and the UK have been working on implementing the Network and Information Systems Security (NIS) Directive. The literature analysing the framing of NIS ([Michels and Walden, 2018](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3297470), and  [Wallis and Johnson, 2020](https://ieeexplore.ieee.org/document/9139641)) points at two main policy concerns: (i) the operators will fail to share or disclose information about cybersecurity measures and breaches and, as a result,  (ii) we will lack the understanding of co-dependencies (i.e. how security issues impact other areas of business). Our recent work through RITICS on NIS implementation (Michalec et al, [2020](https://www.usenix.org/conference/soups2020/presentation/michalec) and [2021](https://onlinelibrary.wiley.com/doi/full/10.1111/rego.12423)) confirms that both the goals of NIS and OT security issues are poorly understood outside of the narrow circle of experts. In particular, the Indicators of Good Practice (IGP) need further refining to better illustrate the progress in maturity (ibid.). 
+
+
+We, therefore, need to build a community of both cyber experts and non-technical business leaders to enable translation between security and operational concerns and, as a result, make better decisions about cyber security in its broader organisational context. This project will draw a roadmap for an improved version of IGPs and cyber maturity assessments, suggesting a range of approaches inspired from ‘agile’ [(NCSC, 2017)](https://www.ncsc.gov.uk/blog-post/ncsc-it-how-ncsc-built-its-own-it-system-0) and ‘anticipatory’ [(Carr and Lesniewska, 2020)](https://journals.sagepub.com/doi/full/10.1177/0047117820948247) regulation paradigms.  COI will test them in the future iterations of NIS and communicating training needs for the Operators of Essential Services.
+
+
+<span style="color: red; font-style: italic;"> Outputs: COMING SOON!</span>

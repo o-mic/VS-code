@@ -1,0 +1,23 @@
+---
+title: "Acknowledgements"
+---
+
+This website is curated by Dr Ola Michalec, researcher at the University of Bristol. If you’re interested in our projects or would like to collaborate, I’d love to hear from you! Feel free to send me an email (link to: ola.Michalec@bristol.ac.uk), or follow me on Twitter (@Ola_Michalec)!​
+
+
+
+The website was build by Suheyb Said (MEng Mechanical Engineering student at the University of Bristol) as a part of the Jean Golding Institute internship.​
+
+
+
+We would like to thank our funders for enabling us to share our research, public engagement and conference activities: Research Institute in Trustworthy Inter-connected Cyber-Physical Systems (RITICS), PETRAS National Centre of Excellence in IoT Systems Cyberecurity, Bristol Digital Futures Institute (BDFI), Innovation Launchpad Network+ (Researcher-in-Residence), Research England (C-DICE), EPSRC Impact Accelerator Account (images), Bristol Cyber Security Group (conference travel), Jean Golding Institute (website).​
+
+
+
+
+​![](JGI-logo.jpg) ![](bdfi%20logo.jpeg){width=20%} ![](cdice.jpeg){width=20%} ![](AI%20logo.png){width=20%} ![](esc%20logo.png){width=20%} ![](innovationnetwork.png){width=20%} ![](ioticss.png){width=20%} ![](ukric%20logo.png){width=20%}
+
+
+
+​
+

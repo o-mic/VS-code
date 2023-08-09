@@ -1,0 +1,69 @@
+---
+title: "Security Threats in Digtial twins"
+---
+
+
+*Based on paper by Alcaraz, C., & Lopez, J. (2022). Digital twin: A comprehensive survey of security threats. IEEE Communications Surveys & Tutorials, 24(3), 1475-1503.*
+*Notes written by Suheyb Said*
+
+Digital Twins (DT) have 4 distinct layers with different functionalities. What is a layer? A layer is a distinct level or stage of functionality which make up the Digital Twin. Each layer has it’s on specific function, the layers are interconnected and are designed to work together cohesively. The layers make up the digital twin.
+
+![Figure 1: 4 Layered Cake](LayeredCake.jpg){width=70%}
+
+To better illustrate, think of a 4 layered cake. All the 4 layers interact with each other to make up the entire cake. This is the same concept in digital twins. The digital twin model has 4 distinct layers with different functionalities.
+
+## Digital twin layers in a nutshell
+
+**Layer 1** - Data Collection: This layer is like the foundation of the Digital Twin. It collects real-time data from sensors and devices attached to the real-world object. These sensors gather information about its status, performance, and other important aspects. 
+
+**Layer 2** - Data Processing: Once the data is collected in Layer 1, it goes to Layer 2 for processing. Here, the collected data is organised, cleaned, and made ready for analysis. This layer ensures that the data is in good shape for the Digital Twin to work with.
+
+**Layer 3** - Model Building: In this layer, a digital model of the real-world object is created. It's like building a virtual version of the object based on the collected data. This digital model allows us to understand and simulate how the real object behaves under different conditions.
+
+**Layer 4** - Visualization and Interaction: The final layer is like putting the finishing touches on the Digital Twin. It provides a way for users to see and interact with the virtual copy. You can visualize data, run simulations, and make decisions based on the insights gained from the Digital Twin.
+
+### Security of Digital Twins: attack classification
+
+The overall attack surface is broad, with attackers potentially compromising the DT through physical or digital means. Digital attacks are associated with software, networks, and information systems, while physical attacks are related to access to endpoints and communication infrastructures.
+
+In this section, security threats are classified and analysed according to the four layers of functionality. Ultimately, security threats impact operational requirements of DT such as availability, integrity, confidentiality, privacy, among the others.  For example, if successful, attackers can extract information, exfiltrate sensitive data, or disrupt critical systems. Such attacks can be sophisticated, resembling Advanced Persistent Threats (APTs) seen in real-world cases like Stuxnet, BlackEnergy, ExPetr, or GreyEnergy.
+
+| Layer 1 | Leyer 2-3  | Layer 4 | 
+|---------|:-----------|--------:|
+| 1 | 12 | 12  | 
+| 123| 123 | 123 | 
+| 1 | 1  | 1  |   
+
+: Demonstration of pipe table syntax
+
+#### Layer 1 attacks  
+
+**Privilege escalation**- a security threat where attackers try to gain higher-level access to control systems (admin control). This happens due to weaknesses in security measures or outdated systems. In Digital Twin scenarios, similar attacks could disrupt the system, causing significant deviations in the virtual model. 
+
+**Denial of Service (DoS)** is an attack where bad actors overwhelm the devices used in the system, causing them to run out of resources and stop working. This disruption affects both the physical operations and the virtual simulations in the Digital Twin. The attackers can use various methods to achieve this, like flooding the system with too much data or selective blocking of important information. They can also coordinate with other malicious devices to create a powerful army of attackers. The goal of such attacks is to disrupt the functionality and communication of the Digital Twin system, which can have severe consequences on decision-making, monitoring, and control processes. 
+
+**Physical Attack** - Attackers are physically interacting with the infrastructure needed to produce Digital Twins. Examples of physical attacks can be theft or destruction to the devices used in the digital twin in environment, which can affect how the digital twin system can collect data. Security measures used to prevent this are typically CCTV, Security Alarms and access control (e.g., ID badges).
+
+#### Layer 2-3 attacks (Both layers have similar attacks)
+
+**Extraction of private information** - Attackers can steal sensitive data such as system dynamics, configurations, and security credentials. This enables cyber espionage (spying) which improves attack techniques. 
+
+**Digital Twins (DT) service tampering** - This attack relates to manipulating and tempering with the services of Digital Twins. For example, Digital Twin models can become desynchronised, leading to inconsistencies between the virtual and real-world models as data may be modified, hidden, etc. This can potentially lead to poor decision making from engineering as the digital twin model will be provided false insights. 
+
+**Man-in-the-middle attacks**: Attackers can intercept and manipulate information flowing between the Digital Twins and other components, which can alter databases, and present misleading information to end users. This can lead to poor decision making.
+
+**Privacy leakage**: Accidental disclosure of information that exposes sensitive details which can happen as Digital Twin servers handle large volumes of private data. It’d important to implement robust security  and privacy measures and encrypt sensitive data to prevent this from happening.
+
+**Rogue virtual resources**- Insiders with privileged access can manipulate the servers hosting digital twin by inserting malicious virtual resources. The goal is so that they can control over a part of the digital twin model.
+
+#### Layer 4 attacks
+
+**Rogue HMIs**- Insiders with access rights to IT (information technology) and OT (operational technology) domains can insert authorised HMIs (Human Machine Interfaces) connected to the digital twins. Through these rogue attackers, other attackers can carry out malicious actions such as modifying data connected to the digital twins.
+
+**Visualization tampering**: Attackers can modify digital twin services and can manipulate the final visualisation which can lead to incorrect decision making.
+
+
+
+
+
+

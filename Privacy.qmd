@@ -1,0 +1,7 @@
+---
+title: "Privacy"
+---
+
+[Damjanovic-Behrendt (2018b)](https://www.researchgate.net/publication/332998367_A_Digital_Twin-based_Privacy_Enhancement_Mechanism_for_the_Automotive_Industry)  studied how digital twins can be used to protect the privacy of smart car drivers. The work explores automated privacy assessments based on a virtual replica of a smart car that continuously receives real-time data from onboard sensors. An example is given where an insurer offers usage-based insurance using data from digital twins. Machine learning methods are integrated into the digital twins to classify personal data, which is then anonymised before being transferred to the insurer, ensuring customer privacy rights are preserved and GDPR requirements are met.
+
+While the focus was on smart cars, the approach could potentially be applied to other types of CPSs, including smart grids, transportation systems, and medical CPSs, offering privacy-enhancing techniques for these domains as well.

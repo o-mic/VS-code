@@ -1,0 +1,15 @@
+---
+title: "Project : Energy and Democracy in Digital Twins"
+---
+ This project evaluates a recent [Energy System digital twin demonstrator project](https://es.catapult.org.uk/project/energy-system-digital-twin-demonstrator-project/), asking research questions on: 
+
+1. **Collaboration:** How do stakeholders collaborate, enabling secure, interoperable, and private data sharing? 
+
+2. **Evidence:** Which model assumptions are deemed ‘good enough’ for digital twins to work? Which policy insights cannot be included in the model? How exactly will digital twins be exercising political influence? 
+
+
+**The research will yield two outputs:**
+  The research will yield two outputs: First, a toolkit for including ethical considerations in science advice & digital twins, including analysis of surveillance, bias, privacy, and security risks relevant to digital twins.  Second, a report on democratising digital twins, analysis of interactions between modelling and policymaking. The project has been developed in collaboration with Energy Systems Catapult. We are funded by the [Researcher-in-Residence Scheme, Innovation Launchpad Network](https://innovationlaunchpad.group.shef.ac.uk/researchers-in-residence/tranche-1-projects)
+
+  ![](Powerplant.png){fig-align="center" width=60%}
+

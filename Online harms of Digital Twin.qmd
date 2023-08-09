@@ -1,0 +1,13 @@
+---
+title: "Old code"
+---
+
+## Online harms associated with Digital Twins
+
+Below are the online harms that are associated with digital twins. Click on one of the images to find more detail about each harm.
+
+[![](UnauthoExample.png){width=270 fig-align="left"}](Unauthorised.qmd) [![](Manip2.png){width=300 fig-align="left"}](manip.qmd)
+
+[![](Malware2.png){width=270 fig-align="left"}](malware.qmd) [![](ddos2.png){width=300 fig-align="left"}](ddos.qmd)
+
+[![](Insider2.png){width=270 fig-align="left"}](Insider.qmd) [![](socialengineering2.png){width=230 fig-align="left"}](socialeng.qmd)

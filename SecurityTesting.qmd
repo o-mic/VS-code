@@ -1,0 +1,7 @@
+---
+title: "Security Testing "
+---
+
+Conducting security tests in operational technology (OT) environments, especially during CPS operation, can be risky and costly. To address this, the use of digital twins has been proposed as a solution. Digital twins allow security tests to be performed virtually on the replicas instead of real systems, ensuring no disruption to live systems and reducing the need for expensive testbeds. 
+
+By using digital twins, security tests can be carried out both during the operational phase and the engineering phase. In the engineering phase, vulnerabilities can be identified and fixed early in the CPS lifecycle. Moreover, the challenge lies in striking a balance between the fidelity of digital twins and the costs involved, ensuring that security tests yield valuable results while keeping expenses in check. Some approaches, like the one proposed by [Bitton et al. (2018 )](https://cris.bgu.ac.il/en/publications/deriving-a-cost-effective-digital-twin-of-an-ics-to-facilitate-se), focus on developing cost-effective specifications of digital twins to support security tests within a certain budget.

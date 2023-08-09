@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  page-footer: |  
+               License CC-BY-4.0            
+               Created using Quarto 1.3.433 and Midjourney 5.2
+  navbar:
+    logo: logo.png
+    left:
+      - href: index.qmd
+        text: Overview
+      - news.qmd
+      - href: DigitalTwins.qmd
+        text: Digital Twins
+      - Criticalinfra.qmd
+      - creative.qmd
+      - Acknowledgements.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
+
+
+

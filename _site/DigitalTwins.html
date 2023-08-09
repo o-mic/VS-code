@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Security Threats in Digtial twins</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./logo.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./news.html" rel="" target="">
+ <span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./DigitalTwins.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Digital Twins</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Criticalinfra.html" rel="" target="">
+ <span class="menu-text">Critical Infrastructure Security</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./creative.html" rel="" target="">
+ <span class="menu-text">Creative responses</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Acknowledgements.html" rel="" target="">
+ <span class="menu-text">Acknowledgements</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#digtial-twins" id="toc-digtial-twins" class="nav-link active" data-scroll-target="#digtial-twins">Digtial Twins</a></li>
+  <li><a href="#digital-twins-for-cyber-security" id="toc-digital-twins-for-cyber-security" class="nav-link" data-scroll-target="#digital-twins-for-cyber-security">Digital Twins for cyber security</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#the-digital-twin-origin" id="toc-the-digital-twin-origin" class="nav-link" data-scroll-target="#the-digital-twin-origin">The digital twin: origin</a></li>
+  <li><a href="#use-cases-of-digital-twins-in-the-manufacturing-domain" id="toc-use-cases-of-digital-twins-in-the-manufacturing-domain" class="nav-link" data-scroll-target="#use-cases-of-digital-twins-in-the-manufacturing-domain">Use Cases of Digital Twins in the Manufacturing Domain</a></li>
+  <li><a href="#the-digital-thread" id="toc-the-digital-thread" class="nav-link" data-scroll-target="#the-digital-thread">The digital thread</a></li>
+  <li><a href="#security-use-cases-of-digital-twin" id="toc-security-use-cases-of-digital-twin" class="nav-link" data-scroll-target="#security-use-cases-of-digital-twin">Security Use Cases of Digital Twin</a></li>
+  </ul></li>
+  <li><a href="#security-threats-in-digital-twins" id="toc-security-threats-in-digital-twins" class="nav-link" data-scroll-target="#security-threats-in-digital-twins">Security Threats in Digital Twins</a>
+  <ul class="collapse">
+  <li><a href="#digital-twin-layers-in-a-nutshell" id="toc-digital-twin-layers-in-a-nutshell" class="nav-link" data-scroll-target="#digital-twin-layers-in-a-nutshell">Digital twin layers in a nutshell</a>
+  <ul class="collapse">
+  <li><a href="#security-of-digital-twins-attack-classification" id="toc-security-of-digital-twins-attack-classification" class="nav-link" data-scroll-target="#security-of-digital-twins-attack-classification">Security of Digital Twins: attack classification</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Security Threats in Digtial twins</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="digtial-twins" class="level1">
+<h1>Digtial Twins</h1>
+<p>Decarbonising the energy system by 2050 presents multiple dilemmas between national security, affordability, public support, and health. What if we could model these dilemmas and better anticipate sociotechnical impacts of building a new nuclear station, installation of solar panels on every roof, or a change in energy tariffs? Digital twins – advanced virtual representations of social and physical processes and objects – promise to achieve that. However, as digital twins are still in the ‘demonstrator’ stage, many questions arise with regards to data accuracy, security, and, most importantly, ethical foundations of claims made by models which have significant implications for democratic decision-making. ​</p>
+<p>Digital twins, simulations and advanced modelling facilities promise to provide accurate data-driven representations of complex socio-technical entities, for example energy systems (Energy Systems Catapult, 2022). However, we shouldn’t take these possibilities for granted. Social science research on the philosophy of computer modelling and test beds has demonstrated their performative characteristics (i.e., the power of models to produce and influence reality as they lead to political action and scholarly debates; MacKenzie, 2005) as well the risk of instrumentalising the facilities for market gains (Laurent et al., 2021). ​</p>
+<p>We, therefore, need to understand the kinds of energy futures that are ‘in the making’ thanks to the advancements in DT and simulations. Who are the experts, collaborations, and datasets behind the models? Understanding the socio-technical dimensions of expertise contributing towards representations of energy futures is vital for ensuring the simulated futures and associated political decisions are democratic, equitable and sustainable. ​</p>
+<p>Previous literature on social studies of modelling investigated smart city test beds or geoengineering experimentation as case studies (Halpern et al.&nbsp;2013; Stilgoe, 2015). However, the unprecedented level of complexity and intertwinement between social and technical domains calls for a renewed attention toward the promises, challenges, and epistemologies of scientific simulation. ​</p>
+<p>​</p>
+<p>The recent advancements in computational modelling and open data require a socio-technica inquiry. For example, organisational ethnography (Neyland, 2007) which incorporate field visits, interviews, and shadowing sessions, could sched a light on day to day working practices of collaboration and conflict resolution. Similarly, Focus groups and workshops could be useful for knowledge exchange and agenda-setting purposes. The approach draws on the long tradition of ‘science studies’ (Woolgar and Latour, 1988; Michalec et al., 2021), where the production of scientific and technical knowledge is understood as cultural practice (Seaver, 2017). This means the digital twins’ research agenda is influenced by the political landscape, funding priorities, collaborations mobilised, and enthusiasm generated among the lay publics. As digital twins enter more complex, socio-technical domains, we ought to understand how experts from different social worlds make claims to knowledge, i.e., their assumptions, long term motivations, tools they use.​</p>
+<p>Project 1 : <a href="./project1.html">Energy and Democracy in Digital Twins</a></p>
+<p>Project 2 : <a href="./project2.html">Living in a simulation? Cybernetic promises and data challenges of digital twins to decarbonise energy systems</a> ​</p>
+</section>
+<section id="digital-twins-for-cyber-security" class="level1">
+<h1>Digital Twins for cyber security</h1>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p><em>Research notes by Suheyb Said</em> <em>Based on the chapter by Eckhart, M., &amp; Ekelhart, A. (2019). Digital twins for cyber-physical systems security: State of the art and outlook. Security and Quality in Cyber-Physical Systems Engineering: With Forewords by Robert M. Lee and Tom Gilb, 383-412</em></p>
+<p>Cyber-Physical Systems (CPSs) are crucial for Industry 4.0, blending physical and virtual components to automate and intelligently operate various sectors. However, CPSs can be vulnerable to cyber-attacks, posing threats to public safety.</p>
+<p>To address CPS security challenges, researchers explore the concept of digital twins, which are virtual replicas of physical objects, that help monitor, visualize, and predict the state of cyber-physical systems. Digital twins offer promising security-enhancing use cases for CPSs. Digital twins could enhance the security of smart factories by spotting security flaws during the design phase and supporting security testing and intrusion detection throughout the system’s lifecycle. However, creating and maintaining digital twins efficiently remains a significant research challenge due to overhead costs. Despite this the full potential and research challenges of digital twins in information security require further exploration.</p>
+</section>
+<section id="the-digital-twin-origin" class="level3">
+<h3 class="anchored" data-anchor-id="the-digital-twin-origin">The digital twin: origin</h3>
+<p>The concept of digital twins has its origins in NASA’s Apollo program, where a twin of a spacecraft was created for training and mirroring flight conditions based on data from the operational spacecraft. Over time, digital twins have evolved from physical copies to virtual models of systems due to technological advancements in simulations and connectivity.</p>
+<p>The term “digital twin” was coined by <a href="https://www.nasa.gov/pdf/501321main_TA11-MSITP-DRAFT-Nov2010-A1.pdf">Shafto et al.&nbsp;(2010)</a> and initially focused on mirroring the life of air vehicles. However, in 2013, <a href="https://www.sciencedirect.com/science/article/pii/S2213846313000114">Lee et al.</a> introduced digital twins to the manufacturing sector, where they simulate physical counterparts based on physical models. This concept expanded to other areas, including health monitoring, systems engineering, and managing various phases of a system’s lifecycle.</p>
+<p>The concept of digital twins has different interpretations, often leading to confusion among the stakeholders. Key requirements for digital twins include <strong>real-time data, integration, and fidelity</strong> to accurately mirror physical counterparts. While the adoption of high-fidelity simulations with real-time data integration is envisioned for the future, most of the current digital twins lack these features. Data integration, either from past lifecycles or real-time acquisition, is essential for creating virtual replicas. However, there is no consensus on the minimum level of data integration required. Industry professionals often view digital twins as simulation models of physical objects that may not receive data instantly or continuously.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Digital twin is a virtual replica of a system that accompanies its physical counterpart during phases of its lifecycle, consumes real-time and historical data if required, and has sufficient fidelity to allow the implementation of the desired security measure.</p>
+</div>
+</div>
+</section>
+<section id="use-cases-of-digital-twins-in-the-manufacturing-domain" class="level3">
+<h3 class="anchored" data-anchor-id="use-cases-of-digital-twins-in-the-manufacturing-domain">Use Cases of Digital Twins in the Manufacturing Domain</h3>
+<p>The digital twin concept finds various applications in the manufacturing domain throughout the lifecycle of Cyber-Physical Production Systems (CPPSs). In the engineering phase, digital twins are used to efficiently to design, test, and fabricate systems, utilising 2D/3D models and physical simulations.</p>
+<p>During the operation phase, digital twins monitor the health of CPPSs in real-time, allowing for preventive/proper maintenance and process optimisation. In the end-of-life phase, digital twins retain knowledge about the system’s life for future reuse and assist in the proper disposal of materials. Overall, digital twins enhance efficiency, reduce downtime, and optimise the lifecycle management of CPPSs (Figure 1).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Picture6.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Figure 1: Engineering Life cycle of a system</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-digital-thread" class="level3">
+<h3 class="anchored" data-anchor-id="the-digital-thread">The digital thread</h3>
+<p>The digital thread involves linking data throughout various phases of a system’s lifecycle to increase efficiency in development and deployment. It enables an unbroken data link through the lifecycle and can be utilized to generate and provide updates to a digital twin. Semantic interoperability of tools used throughout the lifecycle is essential for implementing the digital thread.</p>
+<p>While the digital thread can support digital twins and enhance the security of Cyber-Physical Systems (CPSs), it also represents an attractive target for attacks, as it contains valuable data. A compromised digital thread could lead to severe consequences, such as manipulated updates that put the digital twin into a malicious state. Therefore, implementing adequate security measures to protect each link within the digital thread is crucial.</p>
+</section>
+<section id="security-use-cases-of-digital-twin" class="level3">
+<h3 class="anchored" data-anchor-id="security-use-cases-of-digital-twin">Security Use Cases of Digital Twin</h3>
+<p>Digital twins can be utilised during the engineering phase to design more secure cyber-physical systems (CPSs). They can be combined with cyber ranges to simulate attacks and evaluate potential damages, leading to more robust and fault-tolerant CPS designs. Digital twins can also help reduce the attack surface by identifying weak spots and unused network services in the CPS specification. Furthermore, they enable testing security controls layer-by-layer, aiding in the implementation of a defence in depth strategy. Additionally, digital twins can be used to evaluate containment strategies for compromised devices, facilitating incident handling during the operation phase.</p>
+<section id="intrusion-detection" class="level4">
+<h4 class="anchored" data-anchor-id="intrusion-detection"><a href="./Intrusion Detection.html">1. Intrusion detection</a></h4>
+</section>
+<section id="detecting-hardwaresoftware-misconfigurations" class="level4">
+<h4 class="anchored" data-anchor-id="detecting-hardwaresoftware-misconfigurations"><a href="./HardwareMisconfig.html">2. Detecting Hardware/software misconfigurations</a></h4>
+</section>
+<section id="security-testing" class="level4">
+<h4 class="anchored" data-anchor-id="security-testing"><a href="./SecurityTesting.html">3. Security Testing</a></h4>
+</section>
+<section id="privacy" class="level4">
+<h4 class="anchored" data-anchor-id="privacy"><a href="./Privacy.html">4. Privacy</a></h4>
+</section>
+<section id="training" class="level4">
+<h4 class="anchored" data-anchor-id="training"><a href="./Training.html">5. Training</a></h4>
+</section>
+<section id="secure-decommissioning" class="level4">
+<h4 class="anchored" data-anchor-id="secure-decommissioning"><a href="./Decommissioning.html">6. Secure Decommissioning</a></h4>
+</section>
+<section id="compliance" class="level4">
+<h4 class="anchored" data-anchor-id="compliance"><a href="./Compliance.html">7. Compliance</a></h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Hacker2.png" class="img-fluid figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+</section>
+</section>
+</section>
+<section id="security-threats-in-digital-twins" class="level1">
+<h1>Security Threats in Digital Twins</h1>
+<p><em>Based on paper by Alcaraz, C., &amp; Lopez, J. (2022). Digital twin: A comprehensive survey of security threats. IEEE Communications Surveys &amp; Tutorials, 24(3), 1475-1503.</em> <em>Notes written by Suheyb Said</em></p>
+<p>Digital Twins (DT) have 4 distinct layers with different functionalities. What is a layer? A layer is a distinct level or stage of functionality which make up the Digital Twin. Each layer has it’s on specific function, the layers are interconnected and are designed to work together cohesively. The layers make up the digital twin.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="LayeredCake.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Figure 1: 4 Layered Cake</figcaption>
+</figure>
+</div>
+<p>To better illustrate, think of a 4 layered cake. All the 4 layers interact with each other to make up the entire cake. This is the same concept in digital twins. The digital twin model has 4 distinct layers with different functionalities.</p>
+<section id="digital-twin-layers-in-a-nutshell" class="level2">
+<h2 class="anchored" data-anchor-id="digital-twin-layers-in-a-nutshell">Digital twin layers in a nutshell</h2>
+<p><strong>Layer 1</strong> - Data Collection: This layer is like the foundation of the Digital Twin. It collects real-time data from sensors and devices attached to the real-world object. These sensors gather information about its status, performance, and other important aspects.</p>
+<p><strong>Layer 2</strong> - Data Processing: Once the data is collected in Layer 1, it goes to Layer 2 for processing. Here, the collected data is organised, cleaned, and made ready for analysis. This layer ensures that the data is in good shape for the Digital Twin to work with.</p>
+<p><strong>Layer 3</strong> - Model Building: In this layer, a digital model of the real-world object is created. It’s like building a virtual version of the object based on the collected data. This digital model allows us to understand and simulate how the real object behaves under different conditions.</p>
+<p><strong>Layer 4</strong> - Visualization and Interaction: The final layer is like putting the finishing touches on the Digital Twin. It provides a way for users to see and interact with the virtual copy. You can visualize data, run simulations, and make decisions based on the insights gained from the Digital Twin.</p>
+<section id="security-of-digital-twins-attack-classification" class="level3">
+<h3 class="anchored" data-anchor-id="security-of-digital-twins-attack-classification">Security of Digital Twins: attack classification</h3>
+<p>The overall attack surface is broad, with attackers potentially compromising the DT through physical or digital means. Digital attacks are associated with software, networks, and information systems, while physical attacks are related to access to endpoints and communication infrastructures.</p>
+<p>In this section, security threats are classified and analysed according to the four layers of functionality. Ultimately, security threats impact operational requirements of DT such as availability, integrity, confidentiality, privacy, among the others. For example, if successful, attackers can extract information, exfiltrate sensitive data, or disrupt critical systems. Such attacks can be sophisticated, resembling Advanced Persistent Threats (APTs) seen in real-world cases like Stuxnet, BlackEnergy, ExPetr, or GreyEnergy.</p>
+<table class="table">
+<caption>Different layers and their attacks</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer 1</th>
+<th>Layer 2-3</th>
+<th>Layer 4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Privilege Escalation</td>
+<td>Exctraction of private information</td>
+<td>Rogue HMIs</td>
+</tr>
+<tr class="even">
+<td>Denial of Service</td>
+<td>Digital Twins service tampering</td>
+<td>Visualisation tampering</td>
+</tr>
+<tr class="odd">
+<td>Physical Attack</td>
+<td>Man-in-the-middle attacks</td>
+<td>N/A</td>
+</tr>
+<tr class="even">
+<td>N/A</td>
+<td>Privacy leakage</td>
+<td>N/A</td>
+</tr>
+<tr class="odd">
+<td>N/A</td>
+<td>Rogue vertical resources</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<section id="layer-1-attacks" class="level4">
+<h4 class="anchored" data-anchor-id="layer-1-attacks">Layer 1 attacks</h4>
+<p><strong>Privilege escalation</strong>- a security threat where attackers try to gain higher-level access to control systems (admin control). This happens due to weaknesses in security measures or outdated systems. In Digital Twin scenarios, similar attacks could disrupt the system, causing significant deviations in the virtual model.</p>
+<p><strong>Denial of Service (DoS)</strong> is an attack where bad actors overwhelm the devices used in the system, causing them to run out of resources and stop working. This disruption affects both the physical operations and the virtual simulations in the Digital Twin. The attackers can use various methods to achieve this, like flooding the system with too much data or selective blocking of important information. They can also coordinate with other malicious devices to create a powerful army of attackers. The goal of such attacks is to disrupt the functionality and communication of the Digital Twin system, which can have severe consequences on decision-making, monitoring, and control processes.</p>
+<p><strong>Physical Attack</strong> - Attackers are physically interacting with the infrastructure needed to produce Digital Twins. Examples of physical attacks can be theft or destruction to the devices used in the digital twin in environment, which can affect how the digital twin system can collect data. Security measures used to prevent this are typically CCTV, Security Alarms and access control (e.g., ID badges).</p>
+</section>
+<section id="layer-2-3-attacks-both-layers-have-similar-attacks" class="level4">
+<h4 class="anchored" data-anchor-id="layer-2-3-attacks-both-layers-have-similar-attacks">Layer 2-3 attacks (Both layers have similar attacks)</h4>
+<p><strong>Extraction of private information</strong> - Attackers can steal sensitive data such as system dynamics, configurations, and security credentials. This enables cyber espionage (spying) which improves attack techniques.</p>
+<p><strong>Digital Twins (DT) service tampering</strong> - This attack relates to manipulating and tempering with the services of Digital Twins. For example, Digital Twin models can become desynchronised, leading to inconsistencies between the virtual and real-world models as data may be modified, hidden, etc. This can potentially lead to poor decision making from engineering as the digital twin model will be provided false insights.</p>
+<p><strong>Man-in-the-middle attacks</strong>: Attackers can intercept and manipulate information flowing between the Digital Twins and other components, which can alter databases, and present misleading information to end users. This can lead to poor decision making.</p>
+<p><strong>Privacy leakage</strong>: Accidental disclosure of information that exposes sensitive details which can happen as Digital Twin servers handle large volumes of private data. It’d important to implement robust security and privacy measures and encrypt sensitive data to prevent this from happening.</p>
+<p><strong>Rogue virtual resources</strong>- Insiders with privileged access can manipulate the servers hosting digital twin by inserting malicious virtual resources. The goal is so that they can control over a part of the digital twin model.</p>
+</section>
+<section id="layer-4-attacks" class="level4">
+<h4 class="anchored" data-anchor-id="layer-4-attacks">Layer 4 attacks</h4>
+<p><strong>Rogue HMIs</strong>- Insiders with access rights to IT (information technology) and OT (operational technology) domains can insert authorised HMIs (Human Machine Interfaces) connected to the digital twins. Through these rogue attackers, other attackers can carry out malicious actions such as modifying data connected to the digital twins.</p>
+<p><strong>Visualization tampering</strong>: Attackers can modify digital twin services and can manipulate the final visualisation which can lead to incorrect decision making.</p>
+<p><img src="accessdeny.png" class="img-fluid" style="width:50.0%"></p>
+
+
+</section>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">License CC-BY-4.0<br>
+Created using Quarto 1.3.433 and Midjourney 5.2</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

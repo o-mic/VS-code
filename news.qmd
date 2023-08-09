@@ -1,0 +1,32 @@
+---
+title: "News"
+---
+
+**Electric Feels accepted for the Digital Design Weekend @ the V&A Museum [09.08.2023]**
+
+We’re overjoyed to share that our [Electric Feels project](<https://petras-iot.org/update/electric-feels/>) will be exhibited at the V&A Museum, London during the Digital Design Weekend (22nd-24th September 2023) . Many thanks to PETRAS for supporting this initiative. - Ola, Joe, Mary, Jordan, Aude and Liz.
+
+![Image Credit: the Victoria and Albert Museum](digital-design-weekend-2023_1920.jpg){width=80%}
+
+
+**Researcher-in-Residence Scheme Induction Day – greetings from Birmingham! [19.07.2023]**
+
+Attended an induction event for the Catapult Researcher-in-Residence Scheme, funded by the Innovation Launchpad Network+. I presented my upcoming fellowship in Energy and Democracy in Digital Twins. - Ola
+![](news-researcher-in-residence.jpg){width=80%}
+
+**Welcome to our summer intern, Suheyb Said! [03.07.2023]**
+
+Suheyb, who is currently a MEng student at the University of Bristol, will be joining us for the summer under the Jean Golding Institute Internship Scheme. Suheyb will be learning practical IT skills like markdown, web design, maintaining documentation. He will also conduct a snapshot literature review on challenges and opportunities in energy sector digital twins. - Ola and Suheyb
+
+**Electric Feels exhibited in Bristol [09.06.2023]**
+
+Many thanks to a room full of friends and strangers who attended our exhibition launch at [Café Kino](<https://petras-iot.org/update/electric-feels/>)!  It was wonderful to hear from the artists and answer your questions about the research which inspired artits' creative responses. We'd like to express our gratitude to PETRAS for supporting this event. - Ola, Joe, Mary, Jordan, Aude and Liz.
+
+![](imagefile.jpg){width=80%}
+
+**What’s the STS response to digital twins? Find out during our conference session @ STS Graz  (10.05.2023)**
+
+Together with [Dr Peter Winter](<https://research-information.bris.ac.uk/en/persons/peter-winter>)  and [Dr Andrés Domínguez](<https://www.bristol.ac.uk/people/person/Andres-Dominguez-325d4370-b023-48b5-9f05-b95929e3527e/>), we organised a busy conference session “Digital twins, cousins and other kins: what can we learn from contemporary models, simulators and testbeds?” during STS Graz Conference.  The session was followed by a social at a local Styrian restaurant and alt-indie music bar :D  
+During the conference session, we heard provocations from Emilian Franco, Rosa Thoneick, Jacqueline Ashkin,  Sam Hind, Claudio Coletta, Elie Danziger, Hadrien Macq,  Sophia Knopf, and Johanna T. Fischer.
+
+![](DT%20panel%20graz%202.jpg){width=80%}

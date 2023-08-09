@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 520db668-a8ee-490a-a2bb-53bac92395d8
+      url: 'https://vq21343.quarto.pub/digital-twins'

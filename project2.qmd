@@ -1,0 +1,16 @@
+---
+title: "Project: Living in a simulation? Cybernetic promises and data challenges of digital twins to decarbonise energy systems"
+---
+This project investigates the sites of knowledge production related to energy sector digital twins. We will be asking about:
+
+1. **Cybernetic promises:** Which futures are afforded through digital twins’ outputs? What do these futures exclude or assume? 
+
+2. **Data challenges:** What are potential security and privacy risks associated with digital twins and how to manage them? 
+
+The project will deliver the following outputs: industry-wide knowledge sharing sessions, speculative fiction for public engagement, publications in leading STS journals, publications in leading cyber security conferences.
+
+We will work with several highly-esteemed industry and academic partners:  Bristol Advisory Committe for Climate Change, IOTICS, Energy Systems Catapult, UKRIC Bristol Infrastructure Collaboratory, Bristol Digital Futures Institute, and  Advanced Infrastructure.
+
+![](windmill.png){fig-align="centre"  width=50%}
+
+

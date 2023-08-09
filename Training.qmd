@@ -1,0 +1,7 @@
+---
+title: "Training"
+---
+
+Digital twins can be used as a platform for system testing and training. Since digital twins exist virtually and operate in isolated environments, they are well-suited for testing new defences before implementation and training personnel to respond to cyber incidents. In combination with a cyber range, attacks can be launched against digital twins for training and testing purposes.
+
+The digital-twin framework proposed by [Eckhart and Ekelhart (2018c)](https://www.sqi.at/resources/Towards_Security-Aware_Virtual_Environments_for_Digital_Twins.pdf)  also supports system testing. Real devices can be interfaced with the framework to test their behaviour. The framework can be used to uncover weaknesses and train information security personnel in implementing effective defences in response to attacks. Data collected during these exercises can be valuable for risk assessments.
